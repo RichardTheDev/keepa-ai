@@ -25,9 +25,9 @@ def get_keepa_image(asin):
 
 # Streamlit application
 def main():
-    st.title("ASIN Image Fetcher")
+    st.title("Basic Keepa API Interface")
 
-    question = st.text_input("Ask your question:")
+    question = st.text_input("Enter the ASIN number of a specific product to overview the past 30 days price history .")
 
     if st.button("Submit"):
         asin = extract_asin(question)
